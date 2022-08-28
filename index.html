@@ -3,36 +3,104 @@
 <head>
   <title>liying's page!</title>
   <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
     body {
       text-align: center;
+      background-color: rgb(180, 220, 255);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    .header {
+      background-color: white;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+    .bio {
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+
+    .pictures {
+      background-color: rgb(255, 255, 180);
+      padding: 20px 0px;
+    }
+    .pic-header {
+      padding-bottom: 10px ;
+    }
+    .left-text, .right-text {
+      width: 46%;
+      display: inline-block;
+    }
+    .middle-text {
+      width: 6%;
+      display: inline-block;
+    }
+    .right-text {
+      float: right;
+    }
+    img {
+      width: 70%;
+    }
+    .left-pic, .right-pic {
+      width: 46%;
+      display: inline-block;
+      margin: auto;
+    }
+    .right-pic {
+      float: right;
+    }
+
+
+
+    table, th, td {
+      border: 2px solid gray;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+    table {
+      margin: auto;
+    }
+
   </style>
 </head>
 <body>
-    <h1> Welcome! </h1>
-    <table border="1">
-      <tr>
-        <td><center>Picture of me!</center></td>
-        <td><center><img src="me.jpg" width="300" style="padding: 10px" /></center></td>
-      </tr>
-      <tr>
-        <td rowspan="2">More about me!</td>
-        <td>
-          My name is Li Ying and I'm a Y2 IS student in SMU. </br>
-          I spent the past 20 years mastering my hobby of sleeping so I'm quite good at it!
-        </td>
-      </tr>
-    
-      <tr>
-        <td>
-          Here's a picture of me in my natural state </br>
-          <center><img src="sleeping.jpg" width="300" style="padding: 10px" /></center>
-        </td>
-      </tr>
-    </table>
+  <div>
+    <h1 class="header"> Welcome! </h1>
+  </div>
+  <div class="bio">
+    <p>
+      My name is Li Ying and I'm a Y2 IS student in SMU. </br>
+      I spent the past 20 years mastering my hobby of sleeping so I'm quite good at it!
+    </p>
+  </div>
+
+  <div class="pictures">
+    <h1 class="pic-header">Picture of Me!</h1>
+    <p class="left-text">
+      Me before class
+    </p>
+    <p class="middle-text">
+      >
+    </p>
+    <p class="right-text">
+      Me after class
+    </p>
+    <p class="left-pic">
+      <img src="me.jpg" />
+    </p>
+    <p class="right-pic">
+      <img src="sleeping.jpg" />
+    </p>
+  </div>
+
+
+  <br/><br/>
+  
     
     <h1>My Timetable!</h1>
-    <table border="1">
+    <table>
       <tr>
         <th>Time</th>
         <th>Sunday</th>
