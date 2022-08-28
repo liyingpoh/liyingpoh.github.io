@@ -12,22 +12,25 @@
       background-color: rgb(180, 220, 255);
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    h1 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h1, h2 {
+      padding-bottom: 10px ;
+    }
     .header {
       background-color: white;
       padding: 10px;
       margin-bottom: 30px;
     }
-    .bio {
+    .content {
       line-height: 30px;
       margin-bottom: 30px;
     }
 
     .pictures {
       background-color: rgb(255, 255, 180);
-      padding: 20px 0px;
-    }
-    .pic-header {
-      padding-bottom: 10px ;
+      padding: 30px 0px;
     }
     .left-text, .right-text {
       width: 46%;
@@ -69,15 +72,38 @@
   <div>
     <h1 class="header"> Welcome! </h1>
   </div>
-  <div class="bio">
+  <div class="content">
+    <h2>More about me!</h2>
     <p>
       My name is Li Ying and I'm a Y2 IS student in SMU. </br>
       I spent the past 20 years mastering my hobby of sleeping so I'm quite good at it!
     </p>
   </div>
 
+<div class="content">
+  <h2>My Timetable!</h1>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+      <tr>
+        <th>
+          0000-2359
+        </th>
+        <td colspan="7">SLEEP</td>
+      </tr>
+    </table>
+</div>
+
   <div class="pictures">
-    <h1 class="pic-header">Picture of Me!</h1>
+    <h2 class="pic-header">Picture of Me!</h2>
     <p class="left-text">
       Me before class
     </p>
@@ -99,25 +125,7 @@
   <br/><br/>
   
     
-    <h1>My Timetable!</h1>
-    <table>
-      <tr>
-        <th>Time</th>
-        <th>Sunday</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-        <th>Saturday</th>
-      </tr>
-      <tr>
-        <th>
-          0000-2359
-        </th>
-        <td colspan="7"><center>SLEEP</center></td>
-      </tr>
-    </table>
+
     
     <h1>My Form!</h1>
     <form>
