@@ -16,21 +16,18 @@
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     h1, h2 {
-      padding-bottom: 10px ;
+      padding-bottom: 25px ;
     }
     .header {
       background-color: white;
-      padding: 10px;
+      padding: 25px;
       margin-bottom: 30px;
     }
     .content {
       line-height: 30px;
       margin-bottom: 30px;
     }
-    /* .dark {
-      background-color: rgb(140, 200, 255);
-    } */
-
+    
     .pictures {
       background-color: rgb(255, 255, 180);
       padding: 30px 0px;
@@ -57,10 +54,12 @@
     .right-pic {
       float: right;
     }
+    .video {
+      padding-bottom: 30px;
+    }
+    
 
-
-
-    table, th, td {
+    .content table, .content th, .content td {
       border: 2px solid gray;
       border-collapse: collapse;
       padding: 10px;
@@ -68,8 +67,49 @@
     table {
       margin: auto;
     }
+    .content td:hover, .content th:hover {
+      background-color: rgb(140, 200, 255);
+    } 
 
-  </style>
+    .form {
+      padding: 30px 0px;
+      background-color: rgb(255, 205, 210);
+    }
+    .question {
+      text-align: left;
+      width: fit-content;
+      margin: auto;
+      line-height: 30px;
+      
+    }
+    .question th, .question td {
+      padding: 5px;
+    }
+
+    .question tr:hover {
+      background-color: lightpink;
+      border: lightpink;
+    }
+
+    input[type=text] {
+      border: 1px solid purple;
+      border-radius: 4px;
+      height: 20px;
+      background-color: rgb(255, 205, 210);
+    }
+
+    input[type=submit] {
+      margin-left: 200px;
+      padding: 10px 10px;
+      background-color: rgb(75, 165, 255);
+      border-radius: 10px;
+      border: 0px;
+      font-size: 16px;
+    }
+
+    
+    
+    </style>
 </head>
 <body>
   <div>
@@ -83,7 +123,7 @@
     </p>
   </div>
 
-<div class="content dark">
+<div class="content">
   <h2>My Timetable!</h1>
     <table>
       <tr>
@@ -103,6 +143,15 @@
         <td colspan="7">SLEEP</td>
       </tr>
     </table>
+</div>
+
+<div class="video">
+  <h2>
+    My favourite Travel Destination!
+  </h2>
+  <iframe width="420" height="325"
+    src="https://www.youtube.com/embed/i9YGSKFWgso?autoplay=1&mute=1">
+  </iframe>
 </div>
 
   <div class="pictures">
@@ -125,44 +174,55 @@
   </div>
 
 
-  <br/><br/>
   
     
+  <div class="form">
+    <h2>My Form!</h2>
+    <div class="question">
+      <form>
 
-    
-    <h1>My Form!</h1>
-    <form>
-    <table>
-      <tr>
-        <td> Name: </td>
-        <td> <input type="text" /> </td>
-      </tr>
-    
-      <tr>
-        <td rowspan="2"> Relationship Status: </td>
-        <td> <input type="radio" name="rs" value="single"/> Single </td>
-      </tr>
-      <tr>
-        <td> <input type="radio" name="rs" value="attached"/> Attached </td>
-      </tr>
-      
-      <tr>
-        <td> Favourite Fruits: </td>
-        <td> 
-          <input type="checkbox" name="fruits[]" value="apple" /> Apples </br>
-          <input type="checkbox" name="fruits[]" value="pear" /> Pear </br>
-          <input type="checkbox" name="fruits[]" value="orange" /> Orange </br>
-          <input type="checkbox" name="fruits[]" value="watermelon" /> Watermelon </br>
-          <input type="checkbox" name="fruits[]" value="strawberry" /> Strawberry </br>
+        <table>
+          <tr>
+            <th>
+              Name: 
+            </th>
+            <td>
+              <input type="text" /> 
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              Status: 
+            </th>
+            <td>
+            <input type="radio" name="rs" value="single"/> Single   
+              <input type="radio" name="rs" value="attached"/> Attached 
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              Fruits:
+            </th>
+            <td>
+              <input type="checkbox" name="fruits[]" value="apple" /> Apples </br>
+              <input type="checkbox" name="fruits[]" value="pear" /> Pear </br>
+              <input type="checkbox" name="fruits[]" value="orange" /> Orange </br>
+              <input type="checkbox" name="fruits[]" value="watermelon" /> Watermelon </br>
+              <input type="checkbox" name="fruits[]" value="strawberry" /> Strawberry </br>
+            </td>
+          </tr>
+
+        </table>
         
-        </td>
-      </tr>
+          
+        <input type="submit"> 
+      </form>
+      
+    </div>
+
+  </div>
     
-      <tr>
-        <td colspan="2"> <input type="submit"> </td>  
-      </tr>
-    
-    </table>
-    </form>
 </body>
 </html>
