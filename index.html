@@ -1,247 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <title>liying's page!</title>
-  <style>
-    *{
-      margin: 0px;
-      padding: 0px;
-    }
-    body {
-      text-align: center;
-      background-color: rgb(180, 220, 255);
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    h1 {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    h1, h2 {
-      padding-bottom: 25px ;
-    }
-    .header {
-      background-color: white;
-      padding: 25px;
-      margin-bottom: 30px;
-    }
-    .box {
-      border: 2px dashed cadetblue;
-      width: 50%;
-      margin: auto;
-    }
-    .content {
-      line-height: 30px;
-      margin-bottom: 30px;
-    }
-    
-    .pictures {
-      background-color: rgb(255, 255, 180);
-      padding: 30px 0px;
-    }
-    .left-text, .right-text {
-      width: 46%;
-      display: inline-block;
-    }
-    .middle-text {
-      width: 6%;
-      display: inline-block;
-    }
-    .right-text {
-      float: right;
-    }
-    img {
-      width: 70%;
-    }
-    .left-pic, .right-pic {
-      width: 46%;
-      display: inline-block;
-      margin: auto;
-    }
-    .right-pic {
-      float: right;
-    }
-    .video {
-      padding-bottom: 30px;
-    }
-    
-
-    .content table, .content th, .content td {
-      border: 2px solid gray;
-      border-collapse: collapse;
-      padding: 10px;
-    }
-    table {
-      margin: auto;
-    }
-    .content td:hover, .content th:hover {
-      background-color: rgb(140, 200, 255);
-    } 
-
-    .form {
-      padding: 30px 0px;
-      background-color: rgb(255, 205, 210);
-    }
-    .question {
-      text-align: left;
-      width: fit-content;
-      margin: auto;
-      line-height: 30px;
-      
-    }
-    .question th, .question td {
-      padding: 5px;
-    }
-
-    .question tr:hover {
-      background-color: lightpink;
-      border: lightpink;
-    }
-
-    input[type=text] {
-      border: 1px solid purple;
-      border-radius: 4px;
-      height: 20px;
-      background-color: rgb(255, 205, 210);
-    }
-
-    input[type=submit] {
-      margin-left: 200px;
-      padding: 10px 10px;
-      background-color: rgb(75, 165, 255);
-      border-radius: 10px;
-      border: 0px;
-      font-size: 16px;
-    }
-
-    
-    
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="myscripts.js"></script>
 </head>
 <body>
-  <div>
-    <h1 class="header"> Welcome! </h1>
-  </div>
-  <div class="content box">
-    <h2>More about me!</h2>
-    <p>
-      My name is Li Ying and I'm a Y2 IS student in SMU. </br>
-      I spent the past 20 years mastering my hobby of sleeping so I'm quite good at it!
-    </p>
-  </div>
 
-<div class="content">
-  <h2>My Timetable!</h1>
-    <table>
-      <tr>
-        <th>Time</th>
-        <th>Sunday</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-        <th>Saturday</th>
-      </tr>
-      <tr>
-        <th>
-          0000-2359
-        </th>
-        <td colspan="7">SLEEP</td>
-      </tr>
-    </table>
-</div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#about">About</a>
+        <a class="nav-item nav-link active" href="#travel">Travel</a>
+        <a class="nav-item nav-link active" href="#chat">Chat</a>
+      </div>
+    </div>
+  </nav>
 
-<div class="video">
-  <h2>
-    My favourite Travel Destination!
-  </h2>
-  <iframe width="420" height="325"
-    src="https://www.youtube.com/embed/i9YGSKFWgso?autoplay=1&mute=1">
-  </iframe>
-</div>
+  <div id="about">
+    
 
-  <div class="pictures">
-    <h2 class="pic-header">Picture of Me!</h2>
-    <p class="left-text">
-      Me before class
-    </p>
-    <p class="middle-text">
-      >
-    </p>
-    <p class="right-text">
-      Me after class
-    </p>
-    <p class="left-pic">
-      <img src="me.jpg" />
-    </p>
-    <p class="right-pic">
-      <img src="sleeping.jpg" />
-    </p>
   </div>
 
 
   
-    
-  <div class="form">
-    <h2>My Form!</h2>
-    <div class="question">
-      <form>
-
-        <table>
-          <tr>
-            <th>
-              Name: 
-            </th>
-            <td>
-              <input type="text" /> 
-            </td>
-          </tr>
-
-          <tr>
-            <th>
-              Status: 
-            </th>
-            <td>
-              <label>
-                <input type="radio" name="rs" value="single"/> Single   
-              </label> 
-              <label>
-                <input type="radio" name="rs" value="attached"/> Attached 
-              </label> 
-            </td>
-          </tr>
-
-          <tr>
-            <th>
-              Fruits:
-            </th>
-            <td>
-              <label>
-                <input type="checkbox" name="fruits[]" value="apple" /> Apples </br>
-              </label> 
-              <label>
-                <input type="checkbox" name="fruits[]" value="pear" /> Pear </br>
-              </label> 
-              <label>
-                <input type="checkbox" name="fruits[]" value="orange" /> Orange </br>
-              </label> 
-              <label>
-                <input type="checkbox" name="fruits[]" value="watermelon" /> Watermelon </br>
-              </label> 
-              <label>
-                <input type="checkbox" name="fruits[]" value="strawberry" /> Strawberry </br>
-              </label> 
-            </td>
-          </tr>
-
-        </table>
-        
-          
-        <input type="submit"> 
-      </form>
-      
-    </div>
-
-  </div>
-    
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 </body>
 </html>
