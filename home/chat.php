@@ -24,4 +24,4 @@ if ( isset($_GET['text']) ) {
 
     file_put_contents(FILENAME,$json_str);
 }
-echo $json_str;
+echo $json_str; 
